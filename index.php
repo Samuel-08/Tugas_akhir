@@ -21,7 +21,7 @@ require 'fungsi.php';
     <div class="container">
     <center><h1>Halaman HTML</h1>
     
-    <a href="tambah.php">tambah</a>
+    <a href="tambah.php" class="btn btn-primary">tambah</a>
    
     <table border="1" cellpadding="10" cellspacing="0">
       <tr>
@@ -40,7 +40,7 @@ require 'fungsi.php';
         <th>gambar</th>
       </tr>
       <?php $i = 1; ?>
-      <?php foreach ($mahasiswa as $roww ): ?>
+      <?php foreach ($mahasiswa as $row ): ?>
       
       <tr>
         <td><?= $i; ?></td>
@@ -49,23 +49,24 @@ require 'fungsi.php';
           <hr>
           <a href="">hapus</a>
         </td>
-        <td><?= $roww["nama"]; ?> </td>
-        <td><?= $roww["nim"]; ?> </td>
-        <td><?= $roww["email"]; ?> </td>
-        <td><?= $roww["jurusan"]; ?> </td>
-        <td><?= $roww["prodi"]; ?> </td>
-        <td><?= $roww["tanggalLahir"]; ?> </td>
-        <td><?= $roww["umur"]; ?> </td>
-        <td><?= $roww["jenisKelamin"]; ?> </td>
-        <td><?= $roww["alamat"]; ?> </td>
-        <td><?= $roww["status"]; ?> </td>
-        <td><img src="img/<?= $roww["gambar"]; ?>" width="55"></td>
+        <td><?= $row["nama"]; ?> </td>
+        <td><?= $row["nim"]; ?> </td>
+        <td><?= $row["email"]; ?> </td>
+        <td><?= $row["jurusan"]; ?> </td>
+        <td><?= $row["prodi"]; ?> </td>
+        <td><?= $row["tanggalLahir"]; ?> </td>
+        <td><?= $row["umur"]; ?> </td>
+        <td><?= $row["jenisKelamin"]; ?> </td>
+        <td><?= $row["alamat"]; ?> </td>
+        <td><?= $row["status"]; ?> </td>
+        <td><img src="img/<?= $row["gambar"]; ?>" width="55"></td>
       </tr>
       <?php  $i++; ?>
       <?php endforeach; ?>
     </table>
     
     </center>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
