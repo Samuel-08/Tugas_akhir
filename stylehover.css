@@ -1,0 +1,94 @@
+* {
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    display: gird;
+
+    min-height: 100vh;
+
+    background: rgb(214, 255, 149);
+
+    place-item: center;
+}
+
+.container {
+    display: grid;
+
+    width: 45rem;
+    height: 3rem;
+    margin-top: 5rem;
+    padding: 15px;
+
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 20px rgba(12, 12, 12, .055);
+
+    place-item: center;
+}
+
+ul {
+    display: flex;
+
+    margin-left: 5rem;
+
+    list-style: none;
+
+    user-select: none;
+    pointer-events: none;
+
+    flex-wrap: wrap;
+}
+
+ul li {
+    position: relative;
+
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    pointer-events: all;
+}
+
+a::before {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+
+    width: 0;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 5px;
+    background: rgb(118, 168, 0);
+}
+
+li:hover a::before {
+    left: 0;
+
+    width: 100%;
+
+    transition: .2s all;
+}
+
+a {
+    font-size: 28px;
+
+    transition: .2s;
+    text-decoration: none;
+
+    color: rgb(15, 15, 15);
+}
+
+ul:hover a {
+    color: rgb(211, 211, 211);
+}
+
+ul:hover a:hover {
+    color: #000;
+}
